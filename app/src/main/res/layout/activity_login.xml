@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- 应用标题 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MeChat"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/purple_500" />
+
+        <!-- 头像选择区域 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择头像"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rbAvatar1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:button="@null"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                app:buttonCompat="@drawable/selector_avatar" />
+
+            <RadioButton
+                android:id="@+id/rbAvatar2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:button="@null"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                app:buttonCompat="@drawable/selector_avatar" />
+
+            <RadioButton
+                android:id="@+id/rbAvatar3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:button="@null"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                app:buttonCompat="@drawable/selector_avatar" />
+
+            <RadioButton
+                android:id="@+id/rbAvatar4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:button="@null"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                app:buttonCompat="@drawable/selector_avatar" />
+
+            <RadioButton
+                android:id="@+id/rbAvatar5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:button="@null"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                app:buttonCompat="@drawable/selector_avatar" />
+
+        </RadioGroup>
+
+        <!-- 用户名输入 -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="用户名"
+            android:inputType="text"
+            android:maxLines="1"
+            style="@style/EditTextStyle" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            style="@style/EditTextStyle" />
+
+        <!-- 登录按钮 -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="登录"
+            style="@style/ButtonStyle" />
+
+        <!-- 注册和修改密码按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="注册"
+                style="@style/ButtonStyle"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnChangePassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="修改密码"
+                style="@style/ButtonStyle"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
